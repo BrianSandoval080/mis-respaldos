@@ -20,20 +20,48 @@
     </style>
 
 <style>
+    .titulo-bienvenido{
+        color:black
+    }
         .navbar-nav .nav-link {
-            margin-right: 100px; /* Agrega espacio entre los elementos */
+            margin-right: 120px; /* Agrega espacio entre los elementos */
+        }
+        
+         /* Color del menu */
+        .navbar-custom {
+    background-color: #007bff; /* Azul */
+    /* Otros estilos opcionales */
+    border-color: #007bff; /* Color del borde */
+    color: #fff; /* Color del texto */
+}
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            
+            transform: translateX(-50%);
+        }
+        .logo-text {
+            color: white;
+            font-size: 14px;
+            margin-top: 5px;
         }
     </style>
 </head>
 
 <body>
      <!-- Menú de Navegación -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">SGFS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+     <nav class="navbar navbar-expand-lg navbar-light bg-info ">
+          <!-- Logo centrado -->
+          <a class="navbar-brand mx-auto" href="#">
+            <!-- Aquí puedes insertar tu logo -->
+            <img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_1280.png" alt="Logo" class="d-block mx-auto" style="max-height: 90px;">
+            </a>
+       <!-- Barra de opciones-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">INICIO <span class="sr-only"></span></a>
@@ -49,9 +77,36 @@
                 </li>
             </ul>
         </div>
-    </nav>
 
-    <h1> Bienvenidos</h1>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
+    </nav>
+    <div class="container">
+
+    <h1 class="titulo-bienvenido">Bienvenido administrador</h1>
+
+      <!-- Logo fuera del área de navegación -->
+      <div class="logo-container">
+        <!-- Logo como botón -->
+        <a href="https://www.ejemplo.com">
+            <img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_1280.png" alt="Logo" class="d-block mx-auto" style="max-height: 90px;">
+        </a>
+        <!-- Texto debajo del logo -->
+        <span class="logo-text">Nombre de la empresa</span>
+
+        <div class="logo-container">
+        <!-- Logo como botón -->
+        <a href="https://www.ejemplo.com">
+            <img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_1280.png" alt="Logo" class="d-block mx-auto" style="max-height: 90px;">
+        </a>
+        <!-- Texto debajo del logo -->
+        <span class="logo-text">Nombre de la empresa</span>
+    </div> 
+    </div>
+    <!-- Fin del logo fuera del área de navegación -->
 
     
 </body>
